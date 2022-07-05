@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: url("images/magic.png") repeat-y;
+  background-size: cover;
+}
+/* Readjusting margin of h1 */
+h1 {
+  margin: 10px;
+}
+
+input#digit-input,
+.btn {
+  font-family: "Open Sans";
+  font-size: larger;
+  margin: 10px;
+  border-radius: 10px;
+}
+/* Calculator Container  */
+.container {
+  border-radius: 10px;
+  max-width: 35vw;
+  margin: 80px auto;
+  padding: 2%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+input#digit-input {
+  text-align: right;
+  width: 22vw;
+  padding: 10px 15px;
+  border: 2px solid grey;
+}
+.pressed-op {
+  background-color: dodgerblue;
+  color: #fff;
+}
+.btn {
+  text-align: center;
+  font-weight: bold;
+  width: 55px;
+  padding: 15px;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: darkgrey;
+}
+.clear {
+  width: 100%;
+}
+.row {
+  max-width: 25vw;
+}
