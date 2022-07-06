@@ -18,6 +18,7 @@ input#digit-input,
   font-size: larger;
   margin: 10px;
   border-radius: 10px;
+  border:none;
 }
 /* Calculator Container  */
 .container {
@@ -32,12 +33,12 @@ input#digit-input,
 }
 input#digit-input {
   text-align: right;
-  width: 22vw;
+  width: 300px;
   padding: 10px 15px;
   border: 2px solid grey;
 }
 .pressed-op {
-  background-color: dodgerblue;
+  background-color: #df0790;
   color: #fff;
 }
 .btn {
@@ -45,15 +46,32 @@ input#digit-input {
   font-weight: bold;
   width: 55px;
   padding: 15px;
-  border: none;
+  
 }
 .btn:hover {
   cursor: pointer;
   background-color: darkgrey;
+  color:#df0790;
 }
 .clear {
   width: 100%;
 }
 .row {
   max-width: 25vw;
+}
+
+/* Media Queries */
+@media (max-width : 600px){
+  .container{
+      max-width:90vw;
+      margin:40px auto;
+  }
+  .row{
+    display:flex;
+    justify-content:center;
+  }
+  .btn{
+    padding:15px 20px;
+    border :2px solid grey;
+  }
 }
