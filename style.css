@@ -12,13 +12,13 @@ h1 {
   margin: 10px;
 }
 
-input#digit-input,
+#input,
 .btn {
   font-family: "Open Sans";
   font-size: larger;
   margin: 10px;
   border-radius: 10px;
-  border:none;
+  border:2px solid grey;
 }
 /* Calculator Container  */
 .container {
@@ -31,7 +31,7 @@ input#digit-input,
   flex-direction: column;
   background-color: #fff;
 }
-input#digit-input {
+#input{
   text-align: right;
   width: 300px;
   padding: 10px 15px;
